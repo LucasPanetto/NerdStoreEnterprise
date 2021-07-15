@@ -32,7 +32,13 @@ namespace NSE.Identidade.API
 
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "NSE.Identidade.API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo
+                {
+                    Title = "NSE Identity API",
+                    Description = "Descrição para o Swagger",
+                    Version = "v1",
+                    Contact = new OpenApiContact() { Name = "Lucas Panetto Santos", Email = "lucaspanetto@ucl.br" }
+                });
             });
         }
 
